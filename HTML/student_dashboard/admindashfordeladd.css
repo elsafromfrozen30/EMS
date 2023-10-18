@@ -1,0 +1,155 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .menu-bar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .menu-bar ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .menu-bar ul li {
+    display: inline-block;
+  }
+  
+  .menu-bar ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .menu-bar ul li a:hover {
+    background-color: #555;
+  }
+  
+  .menu-toggle {
+    display: block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .side-menu {
+    background-color: #222;
+    color: #fff;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease;
+  }
+  
+  .side-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .side-menu ul li {
+    padding: 10px 20px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .side-menu ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .side-menu ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .side-menu ul li a:hover {
+    background-color: #444;
+  }
+  
+  .main-content {
+    margin-left: 0;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+  }
+  
+  .menu-open .side-menu {
+    width: 220px;
+  }
+  
+  .menu-open .main-content {
+    margin-left: 220px;
+  }
+  
+  #add-course-form {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  #add-course-form label,
+  #add-course-form input,
+  #add-course-form textarea,
+  #add-course-form button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  #add-course-form input,
+  #add-course-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  #add-course-form button, .button-container {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  .course-card {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .course-card h3 {
+    color: #333;
+    margin-top: 0;
+  }
+  
+  .course-card p {
+    color: #777;
+  }
+  

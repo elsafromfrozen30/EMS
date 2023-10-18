@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Admin Login</title>
+	<link rel="stylesheet" type="text/css" href="../CSS/Admin_login.css">
+
+    <style>
+        body {
+         
+          
+          background: linear-gradient(rgb(8,39,46,0.6), rgb(8,39,46,0.6)), url("https://dt19wmazj2dns.cloudfront.net/wp-content/uploads/2020/12/amrita_univerty.jpg");
+          background-repeat: no-repeat;
+          background-attachment: fixed; 
+          background-size: 100% 100%;
+        }
+        </style>
+
+<script type="text/javascript">
+    function preventBack() {
+        window.history.forward(); 
+    }
+      
+    setTimeout("preventBack()", 0);
+      
+    window.onunload = function () { null };
+</script>
+</head>
+<body>
+	<div class="container" id="container">
+
+        <div class="form-container sign-in-container">
+            <form action="#" onsubmit="adminlogin(event)">
+                <h1>Sign in</h1>
+                
+                <input type="email" id="email" name="email" placeholder="Email" required/>
+                <input type="password" id="password" placeholder="Password" required/>
+                <!--<a href="reset.html">Forgot your password?</a>-->
+                <button>Sign In</button>
+            </form>
+        </div>
+        <div class="overlay-container">
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome Back!</h1>
+                    <p>To keep connected with us please login with your personal info</p>
+                    <button class="ghost" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Welcome Admin!</h1>
+                    <p>To get going please login with your credentials</p>
+                    <a href = "login.html"><button class="aghost" id="are you an admin?"> Are you a User? </button></a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../JS/login.js" type="module"></script>
+</html>

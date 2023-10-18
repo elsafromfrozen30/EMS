@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Dashboard - Elective Management System</title>
+  <link rel="stylesheet" type="text/css" href="admindashfordeladd.css">
+</head>
+<body>
+  <nav class="menu-bar">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ELECTIVE-HOME</a></li>
+      <li><a href="#">BACK</a></li>
+    </ul>
+  </nav>
+
+  <div class="side-menu">
+    <ul>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#">ELECTIVE-HOME</a></li>
+      <li><a href="#">BACK</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <h1>Admin Dashboard - Elective Management System</h1>
+
+    <h2>Add and Delete Elective</h2>
+    <form id="add-course-form">
+      <label for="course-name">Elective name:</label>
+      <input type="text" id="course-name" required>
+
+      <label for="course-description">Elective description:</label>
+      <textarea id="course-description" required></textarea>
+		
+      <button class="submit">Add Course</button>
+		<button class="submit">Delete Course</button>
+		
+    </form>
+  <script src="admindashfordeladd.js"></script>
+</body>
+</html>

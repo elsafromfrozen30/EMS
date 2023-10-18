@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electives Selection: Software Engineering</title>
+    <link rel="stylesheet" type="text/css" href="ct.css">
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward(); 
+        }
+          
+        setTimeout("preventBack()", 0);
+          
+        window.onunload = function () { null };
+    </script>
+    <link rel="stylesheet" type="text/css" href="electivefreecat.css">
+    <script>
+        function checkflag()
+        {
+          const link =localStorage.getItem('flag');
+          if (link==0)
+          {
+            window.location.href='student_course_register.php'
+          }
+          else{
+            alert("You have already completed your registration");
+          }
+        }
+    </script>
+    <script src='signout.js' type='module'> </script>
+</head>
+<body>
+    <header>
+        <h1>ELECTIVE SUGGESTION AS PER CAREER SELECTION</h1>
+    </header>
+    <nav class="menu-bar">
+        <ul>
+              <li><a href="careertrack.html">HOME</a></li>
+          <li><a href="electivepro.php">PROFESSIONAL ELECTIVES</a></li>
+          <li><a href="electivefree.php">FREE ELECTIVES</a></li>
+          <li><a href="electivesci.php">PROFESSIONAL SCIENCE ELECTIVES</a></li>
+          <li><a onclick='checkflag()' href="#">COURSE REGISTER</a></li>
+          <button type="button" onclick='signout(event,1)'>Log Out</button>
+          </ul>
+    </nav>
+    <div class="container">
+		<h2> DATA SCIENCE TRACK (DATA ANALYST, DATA SCIENTIST, DATABASE ADMINISTRATOR, ML ENGINEER) </h2>
+        <div class="semester">
+            <h2>Semester 5</h2>
+            <ul class="course">
+                <li><span>19CSE354</span> - Web Mining</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 6</h2>
+            <ul class="course">
+                <li><span>19CSE335</span> - Time Series Analysis and Forecasting</li>
+                <li><span>19CSE356</span> - Social Network Analytics</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 7</h2>
+            <ul class="course">
+                <li><span>19CSE451</span> - Principles of Artificial Intelligence  </li>
+                <li><span>19CSE456</span> - Neural Networks and Deep Learning</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 8</h2>
+            <ul class="course">
+                <li><span>19CSE452</span> - Semantic Web  </li>
+            </ul>
+        </div>
+
+        <!-- Additional semesters and elective courses can be added here -->
+    </div>
+	
+	<div class="container">
+		<h2> CYBERSECURITY TRACK (CYBERSECURITY ANALYST, NETWORK SECURITY ENGINEER, SECURITY ARCHITECT, CISO, ETHICAL HACKERS) </h2>
+        <div class="semester">
+            <h2>Semester 5</h2>
+            <ul class="course">
+                <li><span>19CSE331</span> - Cryptography</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 6</h2>
+            <ul class="course">
+                <li><span>19CSE332</span> - Information Security</li>
+                <li><span>19CSE333</span> - Secure Coding </li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 7</h2>
+            <ul class="course">
+                <li><span>19CSE334</span> - Cyber Forensics and Malware</li>
+                <li><span>19CSE335</span> - Ethical Hacking</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 8</h2>
+            <ul class="course">
+                <li><span>19CSE338</span> - Mobile and Wireless Security </li>
+            </ul>
+        </div>
+
+        <!-- Additional semesters and elective courses can be added here -->
+    </div>
+	
+	<div class="container">
+		<h2> CYBER PHYSICAL SYSTEMS TRACK (SYSTEMS ANALYST, SYSTEMS ENGINEER, CLOUD ARCHITECT, ASSOCIATE PROFESSOR) </h2>
+        <div class="semester">
+            <h2>Semester 5</h2>
+            <ul class="course">
+                <li><span>19CSE441</span> - Introduction to Cyber Physical Systems</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 6</h2>
+            <ul class="course">
+                <li><span>19CSE442</span> - Pervasive and Ubiquitos Systems</li>
+                <li><span>19CSE443</span> - Spatiotemporal data Management</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 7</h2>
+            <ul class="course">
+                <li><span>19CSE444</span> - Real-Time Systems</li>
+                <li><span>19CSE445</span> - Cloud Computing</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 8</h2>
+            <ul class="course">
+                <li><span>19CSE446</span> - Internet of Things</li>
+            </ul>
+        </div>
+        <!-- Additional semesters and elective courses can be added here -->
+    </div>
+	
+	<div class="container">
+		<h2> CHEMICAL ENGINEERING TRACK (MATERIALS ENGINEER, CHEMICAL TECHNICIAN, ENVIRONMENTAL ENGINEER) </h2>
+        <div class="semester">
+            <h2>Semester 5</h2>
+            <ul class="course">
+                <li><span>19CHY243</span> - Computational Chemistry and Molecular Modelling</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 6</h2>
+            <ul class="course">
+                <li><span>19CHY236</span> - Electrochemical Energy Systems and Processes</li>
+                <li><span>19CHY240</span> - Fuels and Combustion</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 7</h2>
+            <ul class="course">
+                <li><span>19CHY232</span> - Green Chemistry and Technology</li>
+                <li><span>19CHY239</span> - Instrumental Methods of Analysis</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 8</h2>
+            <ul class="course">
+                <li><span>19CHY242</span> - Corrosion Science</li>
+            </ul>
+        </div>
+
+        <!-- Additional semesters and elective courses can be added here -->
+    </div>
+	
+	<div class="container">
+		<h2> WEB DEVELOPMENT TRACK (BACK-END DEVELOPER, FRONT-END ENGINEER, UI/UX DESIGNER, FULL-STACK DEVELOPER) </h2>
+        <div class="semester">
+            <h2>Semester 5</h2>
+            <ul class="course">
+                <li><span>19CSE011</span> - Introduction to Programming</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 6</h2>
+            <ul class="course">
+                <li><span>19CSE022</span> - Python Fundamentals</li>
+                <li><span>19CSE033</span> - Javascript Fundamentals</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 7</h2>
+            <ul class="course">
+                <li><span>19CSE044</span> - JQuery Fundamentals</li>
+                <li><span>19CSE055</span> - HTML and CSS Advance</li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <h2>Semester 8</h2>
+            <ul class="course">
+                <li><span>19CSE066</span> -  Introduction to Node.JS</li>
+            </ul>
+        </div>
+
+        <!-- Additional semesters and elective courses can be added here -->
+    </div>
+
+    <script src="ct.js"></script>
+</body>
+</html>
